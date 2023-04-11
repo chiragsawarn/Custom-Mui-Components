@@ -1,0 +1,28 @@
+*{
+    --error:#ba1b23;
+    --warning:#FF8E31;
+    --success:#019429;
+    --surface-gray-500:#999999;
+    --surface-gray-400:#CCCCCC;
+    --surface-gray-300:#d4d4d4;
+    --surface-gray-200:#EEEEEE;
+    --surface-gray-100:#F4F6FA;
+    --typography-high-emphasis:#222222;
+    --typography-medium-emphasis:rgba(22,22,22,0.5);
+    --color-primary:#DA251C;
+    --color-secondary:#003366;
+    --color-accent:#0A85FF;
+    margin:0;
+    padding:0;
+}
+
+.heading{
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+  }
+
+  label{
+    margin-bottom: 10px;
+  }
