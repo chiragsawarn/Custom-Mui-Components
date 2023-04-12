@@ -149,6 +149,21 @@ const lightTheme = createTheme({
         },
       },
     },
+    MuiTab: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "#EEEEEE",
+          textTransform: "capitalize",
+          color: myPalette.typography.main,
+          "&:hover": { backgroundColor: "#D4D4D4" },
+          "&.Mui-selected": {
+            backgroundColor: "#FFF",
+            color: myPalette.accent.main,
+            // borderBottom: "2px solid myPalette.accent.main",
+          },
+        },
+      },
+    },
   },
 });
 
@@ -254,6 +269,19 @@ const darkTheme = createTheme({
           color: "#FFF",
           backgroundColor: myPalette.typography.main,
           boxShadow: "0px 12px 20px 0px #00000029",
+        },
+      },
+    },
+    MuiTab: {
+      styleOverrides: {
+        root: {
+          textTransform: "capitalize",
+          backgroundColor: "#111",
+          "&:hover": { backgroundColor: "#2A2A2A" },
+          "&.Mui-selected": {
+            backgroundColor: "inherit",
+            color: myPalette.accent.main,
+          },
         },
       },
     },

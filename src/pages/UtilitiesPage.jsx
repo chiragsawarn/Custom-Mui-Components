@@ -1,5 +1,6 @@
 import { Box, Button, Tooltip, Typography } from "@mui/material";
 import React from "react";
+import BasicTabs from "../components/BasicTabs";
 
 export default function UtilitiesPage() {
   return (
@@ -7,6 +8,8 @@ export default function UtilitiesPage() {
       <Typography variant="h4" align="center">
         Some More Utilities
       </Typography>
+
+      {/* Tool Tip */}
       <Box sx={{ margin: "20px" }}>
         <Typography variant="h6" align="left">
           Tooltips
@@ -20,6 +23,9 @@ export default function UtilitiesPage() {
           </Button>
         </Tooltip>
       </Box>
+
+      {/* Tabs */}
+      <BasicTabs />
     </Box>
   );
 }
