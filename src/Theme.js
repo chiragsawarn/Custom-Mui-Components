@@ -164,6 +164,32 @@ const lightTheme = createTheme({
         },
       },
     },
+    MuiAccordion: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "#E6EFFE",
+          "&.Mui-expanded": {
+            backgroundColor: "inherit",
+          },
+        },
+        expanded: {},
+      },
+    },
+    MuiAccordionDetails: {
+      styleOverrides: {
+        root: {
+          paddingLeft: "50px",
+        },
+      },
+    },
+    MuiAccordionSummary: {
+      styleOverrides: {
+        root: {
+          flexDirection: "row-reverse",
+          gap: "10px",
+        },
+      },
+    },
   },
 });
 
@@ -282,6 +308,32 @@ const darkTheme = createTheme({
             backgroundColor: "inherit",
             color: myPalette.accent.main,
           },
+        },
+      },
+    },
+    MuiAccordion: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "#2A2A2A",
+          "&.Mui-expanded": {
+            backgroundColor: "inherit",
+          },
+        },
+        expanded: {},
+      },
+    },
+    MuiAccordionDetails: {
+      styleOverrides: {
+        root: {
+          paddingLeft: "50px",
+        },
+      },
+    },
+    MuiAccordionSummary: {
+      styleOverrides: {
+        root: {
+          flexDirection: "row-reverse",
+          gap: "10px",
         },
       },
     },

@@ -1,10 +1,11 @@
 import { Box, Button, Tooltip, Typography } from "@mui/material";
 import React from "react";
 import BasicTabs from "../components/BasicTabs";
+import MyAccordions from "../components/MyAccordions";
 
 export default function UtilitiesPage() {
   return (
-    <Box width={"100%"} height={"500px"}>
+    <Box width={"100%"}>
       <Typography variant="h4" align="center">
         Some More Utilities
       </Typography>
@@ -25,7 +26,20 @@ export default function UtilitiesPage() {
       </Box>
 
       {/* Tabs */}
-      <BasicTabs />
+      <Box sx={{ margin: "20px" }}>
+        <Typography variant="h6" align="left">
+          Tabs
+        </Typography>
+        <BasicTabs />
+      </Box>
+
+      {/* Accordions */}
+      <Box sx={{ margin: "20px" }}>
+        <Typography variant="h6" align="left">
+          Accordions
+        </Typography>
+        <MyAccordions />
+      </Box>
     </Box>
   );
 }
