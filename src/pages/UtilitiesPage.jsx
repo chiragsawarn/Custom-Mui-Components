@@ -2,6 +2,8 @@ import { Box, Button, Tooltip, Typography } from "@mui/material";
 import React from "react";
 import BasicTabs from "../components/BasicTabs";
 import MyAccordions from "../components/MyAccordions";
+import InfoModal from "../components/InfoModal";
+import FormModal from "../components/FormModal";
 
 export default function UtilitiesPage() {
   return (
@@ -39,6 +41,15 @@ export default function UtilitiesPage() {
           Accordions
         </Typography>
         <MyAccordions />
+      </Box>
+
+      {/* Modals */}
+      <Box sx={{ margin: "20px" }}>
+        <Typography variant="h6" align="left">
+          Modals
+        </Typography>
+        <InfoModal />
+        <FormModal />
       </Box>
     </Box>
   );

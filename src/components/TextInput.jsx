@@ -21,7 +21,7 @@ export default function TextInput(props) {
   };
 
   return (
-    <FormControl sx={{ p: 1, minWidth: "30%" }}>
+    <FormControl sx={{ p: 1, minWidth: props.width || "30%" }}>
       <label htmlFor="inputField">{props.label || "Label"}</label>
       <TextField
         {...props}
