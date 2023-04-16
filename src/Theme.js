@@ -190,6 +190,15 @@ const lightTheme = createTheme({
         },
       },
     },
+    MuiStepIcon: {
+      styleOverrides: {
+        root: {
+          "&.Mui-completed": {
+            color: myPalette.success.main,
+          },
+        },
+      },
+    },
   },
 });
 
@@ -334,6 +343,15 @@ const darkTheme = createTheme({
         root: {
           flexDirection: "row-reverse",
           gap: "10px",
+        },
+      },
+    },
+    MuiStepIcon: {
+      styleOverrides: {
+        root: {
+          "&.Mui-completed": {
+            color: myPalette.success.main,
+          },
         },
       },
     },

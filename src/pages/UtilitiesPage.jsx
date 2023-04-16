@@ -4,6 +4,7 @@ import BasicTabs from "../components/BasicTabs";
 import MyAccordions from "../components/MyAccordions";
 import InfoModal from "../components/InfoModal";
 import FormModal from "../components/FormModal";
+import ProgressIndicator from "../components/ProgressIndicator";
 
 export default function UtilitiesPage() {
   return (
@@ -43,13 +44,20 @@ export default function UtilitiesPage() {
         <MyAccordions />
       </Box>
 
-      {/* Modals */}
+      {/* Progress Indicator */}
       <Box sx={{ margin: "20px" }}>
         <Typography variant="h6" align="left">
-          Modals
+          Progress Indicator 1
         </Typography>
-        <InfoModal />
-        <FormModal />
+        <ProgressIndicator />
+      </Box>
+
+      {/* Progress Indicator */}
+      <Box sx={{ margin: "20px" }}>
+        <Typography variant="h6" align="left">
+          Progress Indicator 2
+        </Typography>
+        <ProgressIndicator alternativeLabel={false} />
       </Box>
     </Box>
   );
