@@ -72,8 +72,8 @@ export default function InputsPage() {
             flexWrap: "wrap",
           }}
         >
-          <MySwitch />
-          <MySwitch />
+          <MySwitch defaultChecked />
+          <MySwitch disabled />
         </div>
       </div>
     </div>

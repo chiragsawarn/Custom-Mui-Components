@@ -72,19 +72,13 @@ const IOSSwitch = styled((props) => (
   },
 }));
 
-export default function MySwitch({ label, disabled, type }) {
-  switch (type) {
-    case "success":
-      {
-      }
-      break;
-    default: {
-    }
-  }
+export default function MySwitch({ label, disabled, defaultChecked }) {
   return (
     <FormGroup>
       <FormControlLabel
-        control={<IOSSwitch sx={{ m: 1 }} defaultChecked />}
+        control={
+          <IOSSwitch sx={{ m: 1 }} defaultChecked={defaultChecked || false} />
+        }
         label={label || "label"}
         disabled={disabled || false}
       />
