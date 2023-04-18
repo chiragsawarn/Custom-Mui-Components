@@ -55,9 +55,7 @@ export default function SelectInput(props) {
       <FormHelperText
         sx={{
           marginLeft: 0,
-          // fontFamily: "Arial",
           fontSize: "inherit",
-          color: "var(--typography-high-emphasis)",
         }}
       >
         {props.helperText}

@@ -11,7 +11,7 @@ export default function App() {
   const [dark, setDark] = useState(false);
 
   return (
-    <div>
+    <div style={{ marginTop: "62px" }}>
       <ThemeProvider theme={dark ? darkTheme : lightTheme}>
         <Paper>
           <FormControlLabel

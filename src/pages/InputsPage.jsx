@@ -17,7 +17,7 @@ export default function InputsPage() {
   };
   return (
     <div>
-      <Typography variant="h4" align="center" color="typography.main">
+      <Typography variant="h4" align="center">
         Inputs
       </Typography>
       <div

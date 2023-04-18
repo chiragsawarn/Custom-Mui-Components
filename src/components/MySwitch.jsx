@@ -14,8 +14,8 @@ const IOSSwitch = styled((props) => (
       <CloseIcon
         style={{
           color: "#000",
-          fontSize: "1rem",
-          padding: "3px",
+          fontSize: "1.25rem",
+          padding: "2px",
           backgroundColor: "#FFF",
           borderRadius: "50%",
         }}
@@ -25,8 +25,8 @@ const IOSSwitch = styled((props) => (
       <CheckIcon
         style={{
           color: "var(--success)",
-          fontSize: "1rem",
-          padding: "3px",
+          fontSize: "1.25rem",
+          padding: "2px",
           backgroundColor: "#FFF",
           borderRadius: "50%",
         }}
@@ -85,80 +85,3 @@ export default function MySwitch({ label, disabled, defaultChecked }) {
     </FormGroup>
   );
 }
-
-// const IOSSwitch = {
-//   width: 42,
-//   height: 26,
-//   padding: 0,
-//   "& .MuiSwitch-switchBase": {
-//     padding: 0,
-//     margin: 2,
-//     transitionDuration: "300ms",
-//     "&.Mui-checked": {
-//       transform: "translateX(16px)",
-//       color: "#fff",
-//       "& + .MuiSwitch-track": {
-//         backgroundColor: "var(--success)",
-//         opacity: 1,
-//         border: 0,
-//       },
-//       "&.Mui-disabled + .MuiSwitch-track": {
-//         opacity: 0.5,
-//       },
-//     },
-//     "&.Mui-focusVisible .MuiSwitch-thumb": {
-//       color: "var(--success)",
-//       border: "6px solid #fff",
-//     },
-//     "&.Mui-disabled + .MuiSwitch-track": {
-//       opacity: 0.7,
-//     },
-//   },
-//   "& .MuiSwitch-track": {
-//     borderRadius: 26 / 2,
-//     backgroundColor: "#C4C4C4",
-//     opacity: 1,
-//     transition: "background-color 500",
-//   },
-// };
-
-// export default function MySwitch({ label, disabled, type }) {
-//   return (
-//     <FormGroup>
-//       <FormControlLabel
-//         control={
-//           <Switch
-//             sx={IOSSwitch}
-//             focusVisibleClassName=".Mui-focusVisible"
-//             disableRipple
-//             icon={
-//               <CloseIcon
-//                 style={{
-//                   position: "relative",
-//                   color: "#000",
-//                   fontSize: "1rem",
-//                   padding: "3px",
-//                   backgroundColor: "#FFF",
-//                   borderRadius: "50%",
-//                 }}
-//               />
-//             }
-//             checkedIcon={
-//               <CheckIcon
-//                 style={{
-//                   color: "var(--success)",
-//                   fontSize: "1rem",
-//                   padding: "3px",
-//                   backgroundColor: "#FFF",
-//                   borderRadius: "50%",
-//                 }}
-//               />
-//             }
-//           />
-//         }
-//         label={label || "label"}
-//         disabled={disabled || false}
-//       />
-//     </FormGroup>
-//   );
-// }
